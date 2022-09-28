@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joy K Mathew</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700|Satisfy|Oswald" rel="stylesheet">
+
+  <style>
+body {
+    background: #222;
+	color: #f0f0f0;
+	padding-top:3em;
+
+}
+a {
+color:#FFC3FF;
+}
+a:hover{
+color:#fff;}
+body, html {
+    height: 100%; 
+}
+#main {
+    height: 100%;
+}
+section {
+    padding:1% 0;
+	min-height: 100%;
+}
+#dot-nav{    
+	right: 10px;
+	top: 50%;
+	margin-top: -50px;
+	height: 100px;
+	z-index: 999;
+	
+}
+
+#dot-nav ul {
+	list-style: none;
+	margin:0;
+	padding: .5em 0.4em 1.5em 1em;
+	background:#dadada;
+	
+}
+#dot-nav li {
+	position: relative;
+	background-color: #bdc3c7;
+	border:3px solid #bdc3c7;
+	border-radius: 15px 15px 15px 15px;
+	cursor: pointer;
+	padding: 5px;
+	height: 10px;
+	margin: 10px 10px 0px 0px;
+	width: 10px;
+	vertical-align:bottom;
+}
+#dot-nav li.active, #dot-nav li:hover {
+	background-color: #8e44ad;
+}
+
+#dot-nav a {
+	outline: 0;
+	vertical-align:top;
+	margin: 0px 0px 0px 25px;
+	position: relative;
+	top:-5px;
+}
+.awesome-tooltip + .tooltip > .tooltip-inner {
+    background-color: #8e44ad; 
+    color: #f5f5f5; 
+    border: 1px solid #8e44ad; 
+}
+.awesome-tooltip + .tooltip.left > .tooltip-arrow{
+    top:50%;
+    right:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid #8e44ad;
+}  
+  .navbar-inverse{
+  background:#8E44AD;	
+  color:#fff;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}  
+  .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: #B1A3C0;
+}
+.navbar-inverse .navbar-nav > .navbar-brand a{
+    color: #fafafa;
+}  
+h1,h2,h3{    font-family: 'Montserrat', sans-serif;
+font-weight:100 !important;}
+  #home{
+background-image: 
+linear-gradient(
+rgba(0, 0, 0, 0.4), 
+rgba(0, 0, 0, 0.4)
+),
+url(bga.jpg); 
+background-attachment:fixed;
+background-size:cover;
+}
+.mash{
+color:#fff !important;}
+.mashheader{
+    font-family: 'Satisfy', cursive;
+	font-size:2em;
+}
+.gal {
+	
+	
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	  
+	
+	}	
+	.gal img{ width: 100%; padding: 7px 0;}
+.btn{
+    margin: 4px;
+    box-shadow: 1px 1px 5px #888888;
+	    font-family: 'Oswald', sans-serif;
+
+}
+
+.btn-xs{
+    font-weight: 300;
+}
+   
+.btn-hot {
+color: #fff;
+background-color: #db5566;
+border-bottom:2px solid #af4451;
+}
+
+.btn-hot:hover, .btn-sky.active:focus, .btn-hot:focus, .open>.dropdown-toggle.btn-hot {
+color: #fff;
+background-color: #df6a78;
+border-bottom:2px solid #b25560;
+outline: none;}
+
+
+.btn-hot:active, .btn-hot.active {
+color: #fff;
+background-color: #c04b59;
+border-top:2px solid #9a3c47;
+margin-top: 2px;
+}
+
+.btn-sunny {
+color: #fff;
+background-color: #f4ad49;
+border-bottom:2px solid #c38a3a;
+}
+
+.btn-sunny:hover, .btn-sky.active:focus, .btn-sunny:focus, .open>.dropdown-toggle.btn-sunny {
+color: #fff;
+background-color: #f5b75f;
+border-bottom:2px solid #c4924c;
+outline: none;
+}
+
+
+.btn-sunny:active, .btn-sunny.active {
+color: #fff;
+background-color: #d69840;
+border-top:2px solid #ab7a33;
+margin-top: 2px;
+}
+
+.btn-fresh {
+color: #fff;
+background-color: #51bf87;
+border-bottom:2px solid #41996c;
+}
+
+.btn-fresh:hover, .btn-sky.active:focus, .btn-fresh:focus, .open>.dropdown-toggle.btn-fresh {
+color: #fff;
+background-color: #66c796;
+border-bottom:2px solid #529f78;
+outline: none;
+}
+
+
+.btn-fresh:active, .btn-fresh.active {
+color: #fff;
+background-color: #47a877;
+border-top:2px solid #39865f;
+outline: none;
+outline-offset: none;
+margin-top: 2px;
+}
+
+.btn-sky {
+color: #fff;
+background-color: #0bacd3;
+border-bottom:2px solid #098aa9;
+}
+
+.btn-sky:hover,.btn-sky.active:focus, .btn-sky:focus, .open>.dropdown-toggle.btn-sky {
+color: #fff;
+background-color: #29b6d8;
+border-bottom:2px solid #2192ad;
+outline: none;
+}
+
+.btn-sky:active, .btn-sky.active {
+color: #fff;
+background-color: #0a97b9;
+border-top:2px solid #087994;
+outline-offset: none;
+margin-top: 2px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: none;
+    outline-offset: 0px;
+}
+
+
+
+@media (max-width: 500px) {
+body {
+	padding-top:1.5em;   
+
+}
+
+		
+		.gal {
+	
+	
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	  
+	
+	}
+		
+	}
+	.spaceontop{
+	margin-top:1em;}
+	.spaceontop2x{
+	margin-top:2em;}
+	
+	
+	
+	.timeline {
+  width: 100%;
+  position: relative;
+  padding: 1px 0;
+  list-style: none;
+  font-weight: 300;
+}
+.timeline .timeline-item {
+  padding-left: 0;
+  padding-right: 30px;
+}
+.timeline .timeline-item.timeline-item-right,
+.timeline .timeline-item:nth-of-type(even):not(.timeline-item-left) {
+  padding-left: 30px;
+  padding-right: 0;
+}
+.timeline .timeline-item .timeline-event {
+  width: 100%;
+}
+.timeline:before {
+  border-right-style: solid;
+}
+.timeline:before,
+.timeline:after {
+  content: " ";
+  display: block;
+}
+.timeline:after {
+  clear: both;
+}
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100% !important;
+  margin-left: 1px;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: #888888;
+}
+.timeline.timeline-single-column.timeline {
+  width: 100%;
+	}
+.timeline.timeline-single-column.timeline .timeline-item {
+  padding-left: 72px;
+  padding-right: 0;
+}
+.timeline.timeline-single-column.timeline .timeline-item.timeline-item-right,
+.timeline.timeline-single-column.timeline .timeline-item:nth-of-type(even):not(.timeline-item-left) {
+  padding-left: 72px;
+  padding-right: 0;
+}
+.timeline.timeline-single-column.timeline .timeline-item .timeline-event {
+  width: 100%;
+}
+.timeline.timeline-single-column.timeline:before {
+  left: 42px;
+  width: 0;
+  margin-left: -1px;
+}
+.timeline.timeline-single-column.timeline .timeline-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.timeline.timeline-single-column.timeline .timeline-item:nth-of-type(even) {
+  margin-top: 0;
+}
+.timeline.timeline-single-column.timeline .timeline-item > .timeline-event {
+  float: right !important;
+}
+.timeline.timeline-single-column.timeline .timeline-item > .timeline-event:before,
+.timeline.timeline-single-column.timeline .timeline-item > .timeline-event:after {
+  right: auto !important;
+  border-left-width: 0 !important;
+}
+.timeline.timeline-single-column.timeline .timeline-item > .timeline-event:before {
+  left: -15px !important;
+  border-right-width: 15px !important;
+}
+.timeline.timeline-single-column.timeline .timeline-item > .timeline-event:after {
+  left: -14px !important;
+  border-right-width: 14px !important;
+}
+.timeline.timeline-single-column.timeline .timeline-item > .timeline-point {
+  transform: translateX(-50%);
+  left: 42px !important;
+  margin-left: 0;
+}
+.timeline.timeline-single-column.timeline .timeline-label {
+  transform: translateX(-50%);
+  margin: 0 0 20px 42px;
+}
+.timeline.timeline-single-column.timeline .timeline-label + .timeline-item + .timeline-item {
+  margin-top: 0;
+}
+.timeline.timeline-line-solid:before {
+  border-right-style: solid;
+}
+.timeline.timeline-line-dotted:before {
+  border-right-style: dotted;
+}
+.timeline.timeline-line-dashed:before {
+  border-right-style: dashed;
+}
+.timeline .timeline-item {
+  position: relative;
+  float: left;
+  clear: left;
+  width: 50%;
+  margin-bottom: 20px;
+}
+.timeline .timeline-item:before,
+.timeline .timeline-item:after {
+  content: "";
+  display: table;
+}
+.timeline .timeline-item:after {
+  clear: both;
+}
+.timeline .timeline-item:last-child {
+  margin-bottom: 0 !important;
+}
+.timeline .timeline-item.timeline-item-right > .timeline-event,
+.timeline .timeline-item:nth-of-type(even):not(.timeline-item-left) > .timeline-event {
+  float: right !important;
+}
+.timeline .timeline-item.timeline-item-right > .timeline-event:before,
+.timeline .timeline-item:nth-of-type(even):not(.timeline-item-left) > .timeline-event:before,
+.timeline .timeline-item.timeline-item-right > .timeline-event:after,
+.timeline .timeline-item:nth-of-type(even):not(.timeline-item-left) > .timeline-event:after {
+  right: auto !important;
+  border-left-width: 0 !important;
+}
+.timeline .timeline-item.timeline-item-right > .timeline-event:before,
+.timeline .timeline-item:nth-of-type(even):not(.timeline-item-left) > .timeline-event:before {
+  left: -15px !important;
+  border-right-width: 15px !important;
+}
+.timeline .timeline-item.timeline-item-right > .timeline-event:after,
+.timeline .timeline-item:nth-of-type(even):not(.timeline-item-left) > .timeline-event:after {
+  left: -14px !important;
+  border-right-width: 14px !important;
+}
+.timeline .timeline-item > .timeline-event:before {
+  top: 10px;
+  right: -15px;
+  border-top: 15px solid transparent;
+  border-left-width: 15px;
+  border-left-style: solid;
+  border-right-width: 0;
+  border-right-style: solid;
+  border-bottom: 15px solid transparent;
+}
+.timeline .timeline-item > .timeline-event:after {
+  top: 11px;
+  right: -14px;
+  border-top: 14px solid transparent;
+  border-left-width: 14px;
+  border-left-style: solid;
+  border-right-width: 0;
+  border-right-style: solid;
+  border-bottom: 14px solid transparent;
+}
+.timeline .timeline-item > .timeline-point {
+  top: 25px;
+}
+.timeline-single-column.timeline .timeline-item > .timeline-event {
+  float: right !important;
+}
+.timeline-single-column.timeline .timeline-item > .timeline-event:before,
+.timeline-single-column.timeline .timeline-item > .timeline-event:after {
+  right: auto !important;
+  border-left-width: 0 !important;
+}
+.timeline-single-column.timeline .timeline-item > .timeline-event:before {
+  left: -15px !important;
+  border-right-width: 15px !important;
+}
+.timeline-single-column.timeline .timeline-item > .timeline-event:after {
+  left: -14px !important;
+  border-right-width: 14px !important;
+}
+.timeline .timeline-item:nth-of-type(2) {
+  margin-top: 40px;
+}
+.timeline .timeline-item.timeline-item-left,
+.timeline .timeline-item.timeline-item-right {
+  clear: both !important;
+}
+.timeline .timeline-item.timeline-item-right,
+.timeline .timeline-item:nth-of-type(even):not(.timeline-item-left) {
+  float: right;
+  clear: right;
+}
+.timeline .timeline-item.timeline-item-right > .timeline-point,
+.timeline .timeline-item:nth-of-type(even):not(.timeline-item-left) > .timeline-point {
+  left: -24px;
+}
+.timeline .timeline-item.timeline-item-right > .timeline-point.timeline-point-blank,
+.timeline .timeline-item:nth-of-type(even):not(.timeline-item-left) > .timeline-point.timeline-point-blank {
+  left: -12px;
+}
+.timeline .timeline-item.timeline-item-arrow-sm.timeline-item-right > .timeline-event,
+.timeline .timeline-item.timeline-item-arrow-sm:nth-of-type(even):not(.timeline-item-left) > .timeline-event {
+  float: right !important;
+}
+.timeline .timeline-item.timeline-item-arrow-sm.timeline-item-right > .timeline-event:before,
+.timeline .timeline-item.timeline-item-arrow-sm:nth-of-type(even):not(.timeline-item-left) > .timeline-event:before,
+.timeline .timeline-item.timeline-item-arrow-sm.timeline-item-right > .timeline-event:after,
+.timeline .timeline-item.timeline-item-arrow-sm:nth-of-type(even):not(.timeline-item-left) > .timeline-event:after {
+  right: auto !important;
+  border-left-width: 0 !important;
+}
+.timeline .timeline-item.timeline-item-arrow-sm.timeline-item-right > .timeline-event:before,
+.timeline .timeline-item.timeline-item-arrow-sm:nth-of-type(even):not(.timeline-item-left) > .timeline-event:before {
+  left: -10px !important;
+  border-right-width: 10px !important;
+}
+.timeline .timeline-item.timeline-item-arrow-sm.timeline-item-right > .timeline-event:after,
+.timeline .timeline-item.timeline-item-arrow-sm:nth-of-type(even):not(.timeline-item-left) > .timeline-event:after {
+  left: -9px !important;
+  border-right-width: 9px !important;
+}
+.timeline .timeline-item.timeline-item-arrow-sm > .timeline-event:before {
+  top: 4px;
+  right: -10px;
+  border-top: 10px solid transparent;
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-right-width: 0;
+  border-right-style: solid;
+  border-bottom: 10px solid transparent;
+}
+.timeline .timeline-item.timeline-item-arrow-sm > .timeline-event:after {
+  top: 5px;
+  right: -9px;
+  border-top: 9px solid transparent;
+  border-left-width: 9px;
+  border-left-style: solid;
+  border-right-width: 0;
+  border-right-style: solid;
+  border-bottom: 9px solid transparent;
+}
+.timeline .timeline-item.timeline-item-arrow-sm > .timeline-point {
+  top: 14px;
+}
+.timeline-single-column.timeline .timeline-item.timeline-item-arrow-sm > .timeline-event {
+  float: right !important;
+}
+.timeline-single-column.timeline .timeline-item.timeline-item-arrow-sm > .timeline-event:before,
+.timeline-single-column.timeline .timeline-item.timeline-item-arrow-sm > .timeline-event:after {
+  right: auto !important;
+  border-left-width: 0 !important;
+}
+.timeline-single-column.timeline .timeline-item.timeline-item-arrow-sm > .timeline-event:before {
+  left: -10px !important;
+  border-right-width: 10px !important;
+}
+.timeline-single-column.timeline .timeline-item.timeline-item-arrow-sm > .timeline-event:after {
+  left: -9px !important;
+  border-right-width: 9px !important;
+}
+.timeline .timeline-item.timeline-item-arrow-md.timeline-item-right > .timeline-event,
+.timeline .timeline-item.timeline-item-arrow-md:nth-of-type(even):not(.timeline-item-left) > .timeline-event {
+  float: right !important;
+}
+.timeline .timeline-item.timeline-item-arrow-md.timeline-item-right > .timeline-event:before,
+.timeline .timeline-item.timeline-item-arrow-md:nth-of-type(even):not(.timeline-item-left) > .timeline-event:before,
+.timeline .timeline-item.timeline-item-arrow-md.timeline-item-right > .timeline-event:after,
+.timeline .timeline-item.timeline-item-arrow-md:nth-of-type(even):not(.timeline-item-left) > .timeline-event:after {
+  right: auto !important;
+  border-left-width: 0 !important;
+}
+.timeline .timeline-item.timeline-item-arrow-md.timeline-item-right > .timeline-event:before,
+.timeline .timeline-item.timeline-item-arrow-md:nth-of-type(even):not(.timeline-item-left) > .timeline-event:before {
+  left: -15px !important;
+  border-right-width: 15px !important;
+}
+.timeline .timeline-item.timeline-item-arrow-md.timeline-item-right > .timeline-event:after,
+.timeline .timeline-item.timeline-item-arrow-md:nth-of-type(even):not(.timeline-item-left) > .timeline-event:after {
+  left: -14px !important;
+  border-right-width: 14px !important;
+}
+.timeline .timeline-item.timeline-item-arrow-md > .timeline-event:before {
+  top: 10px;
+  right: -15px;
+  border-top: 15px solid transparent;
+  border-left-width: 15px;
+  border-left-style: solid;
+  border-right-width: 0;
+  border-right-style: solid;
+  border-bottom: 15px solid transparent;
+}
+.timeline .timeline-item.timeline-item-arrow-md > .timeline-event:after {
+  top: 11px;
+  right: -14px;
+  border-top: 14px solid transparent;
+  border-left-width: 14px;
+  border-left-style: solid;
+  border-right-width: 0;
+  border-right-style: solid;
+  border-bottom: 14px solid transparent;
+}
+.timeline .timeline-item.timeline-item-arrow-md > .timeline-point {
+  top: 25px;
+}
+.timeline-single-column.timeline .timeline-item.timeline-item-arrow-md > .timeline-event {
+  float: right !important;
+}
+.timeline-single-column.timeline .timeline-item.timeline-item-arrow-md > .timeline-event:before,
+.timeline-single-column.timeline .timeline-item.timeline-item-arrow-md > .timeline-event:after {
+  right: auto !important;
+  border-left-width: 0 !important;
+}
+.timeline-single-column.timeline .timeline-item.timeline-item-arrow-md > .timeline-event:before {
+  left: -15px !important;
+  border-right-width: 15px !important;
+}
+.timeline-single-column.timeline .timeline-item.timeline-item-arrow-md > .timeline-event:after {
+  left: -14px !important;
+  border-right-width: 14px !important;
+}
+.timeline .timeline-item.timeline-item-arrow-lg.timeline-item-right > .timeline-event,
+.timeline .timeline-item.timeline-item-arrow-lg:nth-of-type(even):not(.timeline-item-left) > .timeline-event {
+  float: right !important;
+}
+.timeline .timeline-item.timeline-item-arrow-lg.timeline-item-right > .timeline-event:before,
+.timeline .timeline-item.timeline-item-arrow-lg:nth-of-type(even):not(.timeline-item-left) > .timeline-event:before,
+.timeline .timeline-item.timeline-item-arrow-lg.timeline-item-right > .timeline-event:after,
+.timeline .timeline-item.timeline-item-arrow-lg:nth-of-type(even):not(.timeline-item-left) > .timeline-event:after {
+  right: auto !important;
+  border-left-width: 0 !important;
+}
+.timeline .timeline-item.timeline-item-arrow-lg.timeline-item-right > .timeline-event:before,
+.timeline .timeline-item.timeline-item-arrow-lg:nth-of-type(even):not(.timeline-item-left) > .timeline-event:before {
+  left: -18px !important;
+  border-right-width: 18px !important;
+}
+.timeline .timeline-item.timeline-item-arrow-lg.timeline-item-right > .timeline-event:after,
+.timeline .timeline-item.timeline-item-arrow-lg:nth-of-type(even):not(.timeline-item-left) > .timeline-event:after {
+  left: -17px !important;
+  border-right-width: 17px !important;
+}
+.timeline .timeline-item.timeline-item-arrow-lg > .timeline-event:before {
+  top: 10px;
+  right: -18px;
+  border-top: 18px solid transparent;
+  border-left-width: 18px;
+  border-left-style: solid;
+  border-right-width: 0;
+  border-right-style: solid;
+  border-bottom: 18px solid transparent;
+}
+.timeline .timeline-item.timeline-item-arrow-lg > .timeline-event:after {
+  top: 11px;
+  right: -17px;
+  border-top: 17px solid transparent;
+  border-left-width: 17px;
+  border-left-style: solid;
+  border-right-width: 0;
+  border-right-style: solid;
+  border-bottom: 17px solid transparent;
+}
+.timeline .timeline-item.timeline-item-arrow-lg > .timeline-point {
+  top: 28px;
+}
+.timeline-single-column.timeline .timeline-item.timeline-item-arrow-lg > .timeline-event {
+  float: right !important;
+}
+.timeline-single-column.timeline .timeline-item.timeline-item-arrow-lg > .timeline-event:before,
+.timeline-single-column.timeline .timeline-item.timeline-item-arrow-lg > .timeline-event:after {
+  right: auto !important;
+  border-left-width: 0 !important;
+}
+.timeline-single-column.timeline .timeline-item.timeline-item-arrow-lg > .timeline-event:before {
+  left: -18px !important;
+  border-right-width: 18px !important;
+}
+.timeline-single-column.timeline .timeline-item.timeline-item-arrow-lg > .timeline-event:after {
+  left: -17px !important;
+  border-right-width: 17px !important;
+}
+.timeline .timeline-item > .timeline-event {
+  background: #fff;
+  border: 1px solid #888888;
+  color: #555;
+  position: relative;
+  float: left;
+  border-radius: 3px;
+}
+.timeline .timeline-item > .timeline-event:before {
+  border-left-color: #888888;
+  border-right-color: #888888;
+}
+.timeline .timeline-item > .timeline-event:after {
+  border-left-color: #fff;
+  border-right-color: #fff;
+}
+.timeline .timeline-item > .timeline-event * {
+  color: inherit;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-default {
+  background: #fff;
+  border: 1px solid #888888;
+  color: #555;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-default:before {
+  border-left-color: #888888;
+  border-right-color: #888888;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-default:after {
+  border-left-color: #fff;
+  border-right-color: #fff;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-default * {
+  color: inherit;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-primary {
+  background: #f5f5f5;
+  border: 1px solid #888888;
+  color: #555;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-primary:before {
+  border-left-color: #888888;
+  border-right-color: #888888;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-primary:after {
+  border-left-color: #f5f5f5;
+  border-right-color: #f5f5f5;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-primary * {
+  color: inherit;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-success {
+  background: #F3F8ED;
+  border: 1px solid #72b92e;
+  color: #3F8100;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-success:before {
+  border-left-color: #72b92e;
+  border-right-color: #72b92e;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-success:after {
+  border-left-color: #F3F8ED;
+  border-right-color: #F3F8ED;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-success * {
+  color: inherit;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-info {
+  background: #F0F8FD;
+  border: 1px solid #3e93cf;
+  color: #0062A7;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-info:before {
+  border-left-color: #3e93cf;
+  border-right-color: #3e93cf;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-info:after {
+  border-left-color: #F0F8FD;
+  border-right-color: #F0F8FD;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-info * {
+  color: inherit;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-warning {
+  background: #FFF9E9;
+  border: 1px solid #d0aa42;
+  color: #ac7e00;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-warning:before {
+  border-left-color: #d0aa42;
+  border-right-color: #d0aa42;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-warning:after {
+  border-left-color: #FFF9E9;
+  border-right-color: #FFF9E9;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-warning * {
+  color: inherit;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-danger {
+  background: #FFC4BC;
+  border: 1px solid #d25a4b;
+  color: #B71500;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-danger:before {
+  border-left-color: #d25a4b;
+  border-right-color: #d25a4b;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-danger:after {
+  border-left-color: #FFC4BC;
+  border-right-color: #FFC4BC;
+}
+.timeline .timeline-item > .timeline-event.timeline-event-danger * {
+  color: inherit;
+}
+.timeline .timeline-item > .timeline-event:before,
+.timeline .timeline-item > .timeline-event:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+.timeline .timeline-item > .timeline-event .timeline-heading,
+.timeline .timeline-item > .timeline-event .timeline-body,
+.timeline .timeline-item > .timeline-event .timeline-footer {
+  padding: 4px 10px;
+}
+.timeline .timeline-item > .timeline-event .timeline-heading p,
+.timeline .timeline-item > .timeline-event .timeline-body p,
+.timeline .timeline-item > .timeline-event .timeline-footer p,
+.timeline .timeline-item > .timeline-event .timeline-heading ul,
+.timeline .timeline-item > .timeline-event .timeline-body ul,
+.timeline .timeline-item > .timeline-event .timeline-footer ul {
+  margin-bottom: 0;
+}
+.timeline .timeline-item > .timeline-event .timeline-heading h4 {
+  font-weight: 400;
+}
+.timeline .timeline-item > .timeline-event .timeline-footer a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.timeline .timeline-item > .timeline-event .panel,
+.timeline .timeline-item > .timeline-event .table,
+.timeline .timeline-item > .timeline-event .blankslate {
+  margin: 0;
+  border: none;
+  border-radius: inherit;
+  overflow: hidden;
+}
+.timeline .timeline-item > .timeline-event .table th {
+  border-top: 0;
+}
+.timeline .timeline-item > .timeline-point {
+  color: #888888;
+  background: #fff;
+  right: -24px;
+  width: 24px;
+  height: 24px;
+  margin-top: -12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  position: absolute;
+  z-index: 100;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100%;
+  line-height: 20px;
+  text-align: center;
+}
+.timeline .timeline-item > .timeline-point.timeline-point-blank {
+  right: -12px;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  margin-left: 6px;
+  margin-right: 6px;
+  color: #888888;
+  background: #888888;
+}
+.timeline .timeline-item > .timeline-point.timeline-point-default {
+  color: #888888;
+  background: #fff;
+}
+.timeline .timeline-item > .timeline-point.timeline-point-primary {
+  color: #888888;
+  background: #fff;
+}
+.timeline .timeline-item > .timeline-point.timeline-point-success {
+  color: #72b92e;
+  background: #fff;
+}
+.timeline .timeline-item > .timeline-point.timeline-point-info {
+  color: #3e93cf;
+  background: #fff;
+}
+.timeline .timeline-item > .timeline-point.timeline-point-warning {
+  color: #d0aa42;
+  background: #fff;
+}
+.timeline .timeline-item > .timeline-point.timeline-point-danger {
+  color: #d25a4b;
+  background: #fff;
+}
+.timeline .timeline-label {
+  position: relative;
+  float: left;
+  clear: left;
+  width: 50%;
+  margin-bottom: 20px;
+  top: 1px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  text-align: center;
+}
+.timeline .timeline-label:before,
+.timeline .timeline-label:after {
+  content: "";
+  display: table;
+}
+.timeline .timeline-label:after {
+  clear: both;
+}
+.timeline .timeline-label:last-child {
+  margin-bottom: 0 !important;
+}
+.timeline .timeline-label + .timeline-item {
+  margin-top: 0;
+}
+.timeline .timeline-label + .timeline-item + .timeline-item {
+  margin-top: 40px;
+}
+.timeline .timeline-label .label-default {
+  background-color: #888888;
+}
+.timeline .timeline-label .label-primary {
+  background-color: #888888;
+}
+.timeline .timeline-label .label-info {
+  background-color: #3e93cf;
+}
+.timeline .timeline-label .label-warning {
+  background-color: #d0aa42;
+}
+.timeline .timeline-label .label-danger {
+  background-color: #d25a4b;
+}
+@media (max-width: 768px) {
+  .timeline.timeline {
+    width: 100%;
+    max-width: 100%;
+  }
+  .timeline.timeline .timeline-item {
+    padding-left: 72px;
+    padding-right: 0;
+  }
+  .timeline.timeline .timeline-item.timeline-item-right,
+  .timeline.timeline .timeline-item:nth-of-type(even):not(.timeline-item-left) {
+    padding-left: 72px;
+    padding-right: 0;
+  }
+  .timeline.timeline .timeline-item .timeline-event {
+    width: 100%;
+  }
+  .timeline.timeline:before {
+    left: 42px;
+    width: 0;
+    margin-left: -1px;
+  }
+  .timeline.timeline .timeline-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .timeline.timeline .timeline-item:nth-of-type(even) {
+    margin-top: 0;
+  }
+  .timeline.timeline .timeline-item > .timeline-event {
+    float: right !important;
+  }
+  .timeline.timeline .timeline-item > .timeline-event:before,
+  .timeline.timeline .timeline-item > .timeline-event:after {
+    right: auto !important;
+    border-left-width: 0 !important;
+  }
+  .timeline.timeline .timeline-item > .timeline-event:before {
+    left: -15px !important;
+    border-right-width: 15px !important;
+  }
+  .timeline.timeline .timeline-item > .timeline-event:after {
+    left: -14px !important;
+    border-right-width: 14px !important;
+  }
+  .timeline.timeline .timeline-item > .timeline-point {
+    transform: translateX(-50%);
+    left: 42px !important;
+    margin-left: 0;
+  }
+  .timeline.timeline .timeline-label {
+    transform: translateX(-50%);
+    margin: 0 0 20px 42px;
+  }
+  .timeline.timeline .timeline-label + .timeline-item + .timeline-item {
+    margin-top: 0;
+  }
+}
+.tagline{
+font-family:oswald;}
+	
+  </style>
+  </head>
+  <body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      
+	  <li class=" nv" title="Home"><a href="#home">Home</a></li>
+	      <li class=" nv" title="About"><a href="#about">About us</a></li>
+	      <li class=" nv" title="Biography"><a href="#bio">Biography</a></li> 
+	      <li class=" nv" title="Filmography"><a href="#filim">Filmography</a></li> 
+	      <li class=" nv" title="News"><a href="#news">In News</a></li>
+	      <li class=" nv" title="Gallery"><a href="#gallery">Gallery</a></li>
+	      <li class=" nv" title="Contact"><a href="#contact">Contct us</a></li></ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  
+    <div id="main" >
+    	<section id="home">
+ 
+ <header class="business-header mash">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12  text-center">
+                    <br><br><br><br><br><br>
+                    <hr>
+                    <h1 class="tagline"> Joy K Mathew - World Mother vision</h1>
+                    <img src="logo.png">
+					<hr>
+                    <p><h3 class="mashheader">Actor, Director, Writer, Producer and Journalist</h3></p>
+                    <br>
+<span class="nv">                    <a class="btn btn-fresh btn-md" href="#about">Know More >></a>
+               </span> </div>
+            </div>
+        </div>
+    </header>
+    	</section>
+        <section id="about">
+           <article>
+               <div >
+                   <div class="container text-justify">
+                    <h1>About Joy K Mathew </h1><br>
+
+<div class="col-md-8 ">                       <p>
+Mr. Joy K Mathew is an actor, director, writer, producer and journalist. He is actively involved in social works as well. He is well known for his motivational films and documentaries. His motivational films have bagged many international accolades.                        </p>
+<p>He has written and directed seven motivational films namely Abhayam (Protection), Danam (Donation), Viswasam (Faith), Kaanakkazhchakal (Unseen visuals), Sahanam (Sacrifice), VaruthikkalatheVasantham (The Spring in the time of summer), Marananantharam (After Death). Although settled in Australia, he carries out various socio-cultural and charitable activities through his trust - World Mother Vision. In the field of art, culture and charity he has carved a niche for himself. His bag of accolades includes National Integration Award (2007), National Award of the Global Confederation of Pravasi Malayali (2009), Sequar Award(2009) and L Channel Award(2010). It also includes the international recognitions like World Human Rights Protection Association in UK (2003), Italian Film Award from Italy (2009) and International Short Film Award USA(2012).</p>
+                  <p>Joy is also a motivational trainer. He trained thousands of   students in many schools and colleges. Throughout his training he was insisting much on their abilities to contribute a lot towards the wellbeing of society in various aspects. </p></div> <div class="col-md-4"><img src="movie actor joy k mathew.jpg" class="img-responsive img-rounded" ></div>
+				  <div class="col-md-12"><h2>Personal Life</h2>
+				<div class="col-md-4"><img src="img1.jpg" class="img-responsive img-rounded" ></div><div class="col-md-7">  <P>Joy was born as the eldest of four children to Mr. K.J. Mathew (Ex-service man, Indian Army) and Mrs. Mary Mathew. He is married to Jaquiline. They have two children - Teresa and Augnes; they are studying in 12th and 9th grades respectively in Australia.  He is a deep devotee of Mother Teresa who blessed him personally. When she was bedridden, he got a chance to meet her. That was an admirable and unique moment in his life. He thinks that her blessings are the driving power behind him. </P></div>
+				  </div>
+				  <div class="col-md-5 col-md-offset-4 spaceontop2x">
+				  
+<span class="nv"><a  class="btn btn-hot text-capitalize" href="#bio">Biography</a></span>
+<span class="nv"><a class="btn btn-sunny text-capitalize" href="#filim">Filmography</a>   
+</span>
+<span class="nv"><a class="btn btn-fresh text-capitalize" href="#news">In the News</a>
+</span>     
+				  </div>
+				  
+				  
+				  </div>
+               </div>
+           </article>           
+        </section>
+		<section id="bio">
+           <article>
+               <div >
+                   <div class="container text-justify">
+                    <h1>Biography of Joy K Mathew </h1><br>
+
+
+<div class="col-md-12">                       <p>
+Joy K Mathew is the son of former Indian Army man, KJ Mathew and Mary Mathew. From the very childhood days, he had a profound love for watching movies, hearing stories, reading and writing. His main hobby during child hood was to turn short stories into dramas, write skits and perform it with friends on stages. 
+
+ </p>
+<p>By the time he completed his 10th, he found himself having an ardent love for movies and wanted to turn his career into it, but the parents were opposed to Joy's wish. After completing the service in army, his father started working abroad. Parents decided to send joy to pursue electrical / electronic Engineering with the purpose of taking Joy abroad with his father. With the deep desire for film in mind, Joy started his studies, obeying the parents. After completing Engineering, father took joy abroad. 
+</p>
+
+                  <p>Even though in overseas, love for film was stronger in Joy’s mind. Even in the midst of his job in abroad, he did not limit himself with the thoughts on film and related activities but also started to get himself involved in charity and social activities. In order to make his burning film desire come true, he tried getting closer to film industry and made new friendships. Within a few years, leaving his foreign job, he returned to India with the thought of making his own signature in the film. Although more actively involved in making new friendships in film industry and social activities, he often got saddened by the thought that he might have to go back abroad. 
+ </p>
+				                    <p>
+Mother Teresa, the mother of the poor was the guiding light behind Joy’s way to social service and philanthropy. The self-sacrificing life of Mother Teresa influenced, powered and contributed to the social views of Joy. Knowing the sad news, Mother Teresa had fallen ill, Joy tried to meet her in person. Although the way realise the wish had full of challenges, the efforts were not futile. Around one and a half month, Joy stayed in Kolkata-India with the aim of seeing Mother Teresa at least once. During this time, he could visit all the ministry centres built by Mother Teresa in Kolkata. He also spent time helping the poor and the sick there in those centres. And, on a blessed day, he got the golden and rare opportunity to meet Mother for which he was eagerly waiting for. This took him into a state of cloud nine. He still remembers the day as it has just happened yesterday. He could reveal and share all his thoughts and wishes to Mother, opening up his mind and heart. 
+</p>
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  <p>
+				  
+				  “I would like to spread Motivational messages in the society using the medium of film, but I do not know whether I will be successful or not”, Joy said to mother. Mother replied, “go ahead courageously, my prayers are always with you”. Mother saw him off with her blessings and giving many gifts. 
+</p><p>
+Memories of this unique moment in life and the confidence that the presence of Mother is still with him is the source of energy for Joy's work today. After returning from Kolkata, with the blessings of Mother Teresa, Joy started World Mother Vision, a motivational film production movement. A few months after his return from Kolkata, Mother Teresa was called for her eternal gift on September 5, 1997. Although the departure of Mother put Joy in agony, the insight that the presence of Mother is with him gave him the courage to go ahead. Since 1997, Joy Started producing and screening Motivational films under the banner of World Mother Vision with the aim of the progress of the society and to motivate people.  Joy released 11 Motivational films and 3 documentaries which had three minutes to 2 hours of time duration. Joy’s films and documentaries grabbed several national and international awards and recognitions.
+</p><p>
+Joy got married in 1999 and has two daughters. The names given to them was of Mother Teresa, the energy, power and guiding light of Joy. He named them Agnes and Teresa. Joy’s family moved to Australia in 2008. Joy continued his passion of producing motivational films in Australia too. In 2019, with the support of Queen's Land Government, Banana Shire Council and Radf Fund, he released The Dependence, a motivational film in English. The film received the recognition of Government of Queen's Land, Radf Fund and Banana Shire Council. 
+</p><p>
+Joy is raising his daughters, providing awareness of the importance and need of the charity and social activities from their very child hood. The world has become a global village. The evidence of it is that in all countries there are people of different nationalities, religions and cultures. The leaders of the governments divide the citizens and sow the seeds of hatred among them to gain political advantage.  Today, the boundaries of many countries are bound by the human rights violations created by government to keep the power unquestionably. Joy taught and trained his daughters to demonstrate the outstanding examples of humanity, cooperation, and love to break these human made boundaries with hidden agendas.  Both of his daughters have grown in understanding the value of equality, fraternity, and coexistence through the lessons learned from their father. 
+</p><p>
+Joy tells us through his life and her children that nothing is impossible and can achieve and learn anything through hard work and by trying constantly. For Joy it is very saddening that mental health has become worst in the world and needs best care.  Another objective of Joy is to create a younger generation of good mental health by giving them best mental care possible. Joy is trying to encourage his daughters to bring back those who suffer from mental health problem to the mainstream of societies by extending creative awareness, training and related activities in many places of the world. 
+</p><p>
+Joy reveals his presence to the world by becoming the light in the darkness and hope for the teary eyes with the great prayer and verse, ‘sacrificing self-satisfaction, one should focus on wellbeing of others’.  Joy, who only aims to use and dedicate his own life for the good of others, do not mourn for anything that he wants to do, if it doesn’t happen in time due to various difficulties. He believes that the things will happen at the right time in the right mode without any difficulties if one deserves it. He also desires for only the things that he deserves and move only through the right path. 
+</p>
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				
+				
+<p>				In 1997, he had been to Kuwait to pursue a career. During this period, he instituted a charitable society namely "World Mother Vision". He is doing charitable works for needy people through this trust. He was involved in many artistic and literary programs.  
+</p><p>After seven years of sojourn in Kuwait he returned to his country in 2003. He started two magazines;"Ayalkoottam" and "Mother”. Ayalkoottam was aimed at to redeem the downtrodden people and strengthen women's liberation. His efforts always achieved the goals. Another magazine 'Mother' upheld the family values and the importance and role of mothers all over the world. This magazine achieved acclaim Nationally and Internationally.
+</p><p>During this period, he started his charity activities for the needy. Joy put a lot of efforts to educate the society about the importance of organ transplant and blood donation. He spread these messages through his writings, films, and charity works. These messages created a good mindset in the youth in helping others.
+</p><p>In 2003 he scripted and directed his first motivational film 'Abhayam'. It depicts the plight of a joint family
+</p><p>In 2005 his second motivational film 'Sahanam' was released. It narrates the story of an alcoholic person who destroyed his family through his bad behavior. 
+</p><p>In 2007Joy made a documentary called "Savior of Trees" which focuses the importance of planting a tree for a sustainable environment. He is an ardent lover of nature.
+</p><p>In 2008, he released another motivational film titled Daanam. It narrates the life of two friends who tried their luck in cinema. 
+</p><p>In 2009, he wrote and directed the powerful story of St. Sebastian titled "Viswasam". This is the first film in the history depicting the life of St. Sebastian. This film got the Italian award. The film was aired on the famous TV channel in Kerala namely Kairali TV. It got a huge appreciation from viewers. Joy successfully handled the lead role of St. Sebastian in this film.
+</p><p>In 2011, he scripted and directed another film titled 'Kanakkazhchakal'. It tells the story of a youth who is blind and kind. Joy was in the title role.
+</p><p>In 2012 he wrote and directed "Varuthikkalathe Vasantham", the story of coastal residents in Kerala. In the same year he relocated to Australia and settled there. In Australia, he organized many socio-cultural programmmes for the benefit of Indian expatriates. He is in the mainstream of different training sessions in film making workshops, arts and culture, media etc. throughout India and overseas. Joy is recognized internationally for his directorial skills, writings, acting and journalism. 
+</p><p>In 2013 his famous short film "Marananantharam" was released. The film got many International awards.  Joy got the 'Best Director Award' too. This film is all about the importance of Organ donation. 
+</p><p>In 2014, he produced another short film titled' Aathmakkalude Nombaram'. This short film tells the story of two souls and Joy was the main actor.
+</p><p>In 2015 he made a documentary, called 'Punarjani Thedunna Parvathy Puthanar'.This documentary narrates the environmental problems which is a major concern today.  It conveyed the importance of protecting rivers.
+</p>
+				
+				  </div> 				  
+				  
+				  </div>
+               </div>
+           </article>           
+           <article>
+               <div >
+                   <div class="container text-justify">
+                    <h1>Joy K Mathew’s Message:
+ </h1><br>
+ <p>
+     Be the light in the darkness<br>
+Become the hope for the teary eyes,<br>
+Whatever is our area of activity, helping others will make our life more beautiful and bright. <br>
+Have the strong belief that nothing is impossible.  Success is guaranteed when we are honest and truthful in all our activities. If you are convinced that I can do, it will become possible whatever and how difficult it is.  
+
+ </p>
+				  </div>
+               </div>
+           </article>           
+
+
+        </section>
+		
+		
+		
+		
+		<section id="filim">
+           <article>
+               <div >
+                   <div class="container text-justify">
+                    <h1>Filmography </h1><br>
+
+<div class="timeline timeline-single-column">
+                    
+
+                    <span class="timeline-label">
+                        <span class="label label-info ">1993</span>
+                    </span>
+
+                    <div class="timeline-item">
+                        <div class="timeline-point timeline-point-primary">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-event timeline-event-primary">
+                            <div class="timeline-heading">
+                                <h4>Nombaraveena (The Lamenting harp) </h4>
+								                                <p>Hero, Co-Producer</p>
+
+                            </div>
+                            <div class="timeline-body">
+<div class="row">							<div class="col-md-5 col-md-offset-1">														<img src="img/filims/30.jpg" class="img-responsive img-rounded">
+</div>
+<div class="col-md-5"><p class="spaceontop">								This short film narrates the life of a son who was searching for his mother. His mother was a famous dancer. In his childhood, he lost his mother because of her busy life. She avoided her son as well Years passed by and he yearns to see his mother once more. He searches for her in every nook and corner. In this serial Joy K. Mathew essays the hero's role. He also co-produced this film for India's national Television channel, Dooradarshan.</p>
+						</div></div>		
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">Duration: 1hr</p>
+                            </div>
+                        </div>
+                    </div>                
+					
+					    <span class="timeline-label">
+                        <span class="label label-info ">2003</span>
+                    </span>
+
+                    <div class="timeline-item">
+                        <div class="timeline-point timeline-point-primary">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-event timeline-event-primary">
+                            <div class="timeline-heading">
+                                <h4>Abhayam (Protection)</h4>
+                                <p>Story,Hero</p>
+
+                            </div>
+
+                            <div class="timeline-body">
+							<div class="row">							<div class="col-md-5 col-md-offset-1"><img src="img/filims/FB_IMG_1486071335271.jpg" class="img-responsive img-rounded"></div><div class="col-md-5">
+<p>							This film depicts the story of a joint family. The family had lots of members as siblings. They were leading a happy life. One among them started the habit of consuming alcohol. He had many alcoholic friends too and had a negative impact in his life. The family lost the happiness and they started quarrelling with each other. Once he tried to take his brother's property through cheating. His brother's son realizes that their family is going to crumble. So, they were desperately trying for the happy reunion of their family. At last their efforts were fruitful and the whole family realized and rectified their mistakes and back again to a new happy and peaceful life. Mr. Joy did the main role. </p>
+							</div></div>
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">Duration: 1hr 30Mins</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					
+					<span class="timeline-label">
+                        <span class="label label-info ">2005</span>
+                    </span>
+
+                    <div class="timeline-item">
+                        <div class="timeline-point timeline-point-primary">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-event timeline-event-primary">
+                            <div class="timeline-heading">
+                                <h4>Sahanam  (Sacrifice)</h4>
+                                <p>Story, Screenplay, Dialogue, Hero, Producer </p>
+								
+								                            </div>
+                            <div class="timeline-body">
+<div class="row">							<div class="col-md-4 col-md-offset-1"><img src="img/filims/sahanam joy k mathew.jpg" class="img-responsive img-rounded"></div>
+<div class="col-md-5">
+<p>									Sahanam tells the story of an alcoholic person. He had many bad friends. He listened to his friends only and thus they exploited him badly. He abused his wife and kids physically after consuming alcohol. Because of his hectic habit of drinking, his life got derailed. The film tells the impact of the nasty habit of a person on his family and convinces the society about the dangers of alcoholism.
+</p>                  
+</div>          
+</div>
+<br>
+<p class="text-center">							<a class="btn btn-hot btn-md" style="color:white" href="https://www.youtube.com/watch?v=1CHCl_Ejo84
+
+" target="_blank">Watch this movie</a>
+</p>
+</div>
+                            <div class="timeline-footer">
+                                <p class="text-right">Duration: 30Mins</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<span class="timeline-label">
+                        <span class="label label-info ">2007</span>
+                    </span>
+
+                    <div class="timeline-item">
+                        <div class="timeline-point timeline-point-primary">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-event timeline-event-primary">
+                            <div class="timeline-heading">
+                                <h4>Saviour of Trees (Documentary)  </h4>
+                                <p>Script, Director, Producer  </p>
+                            </div>
+                            <div class="timeline-body">
+<div class="row">							<div class="col-md-5 col-md-offset-1"><img src="img/filims/17.jpg" class="img-responsive img-rounded">
+</div><div class="col-md-5"><p>									It shows the importance of planting trees for the sustainable and healthy environment. Also narrates the life of a policeman who planted more than hundred trees on the sides of a main road in his native place. Through his life he teaches the importance of trees to protect the environment. </p></div>
+</div>                            
+							<br>
+<p class="text-center">							<a class="btn btn-hot btn-md" style="color:white" href="https://www.youtube.com/watch?v=yX05Kxen3BY" target="_blank">Watch this movie</a>
+</p>
+							</div>
+                            <div class="timeline-footer">
+                                <p class="text-right">Duration: 30Mins</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					
+						<span class="timeline-label">
+                        <span class="label label-info ">2008</span>
+                    </span>
+
+                    <div class="timeline-item">
+                        <div class="timeline-point timeline-point-primary">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-event timeline-event-primary">
+                            <div class="timeline-heading">
+                                <h4>Daanam (Donation)</h4>                                <p>Story, Hero,Producer </p>
+
+                            </div>
+                            <div class="timeline-body">
+						<div class="row">							<div class="col-md-5 col-md-offset-1">	<img src="img/filims/36.jpg" class="img-responsive img-rounded"></div>
+						<div class="col-md-5">
+<p>							Danam depicts the life of two friends, Joy and Manu Raj. Both of them are aspiring actors. So they left their home and tried their luck in movies. They wandered through different film locations but nobody gives them a chance.  After many days of futile wanderings their pockets were empty and they realize the truth. So they decided to move in different way to get a good job for better life. 
+</p><p>One-day Joy met a couple who were suffering from leprosy. They help Joy. After some months he returned to the couple to return the money he owed but they hesitate to take it. There he realized that love is the most valuable thing in the world. He loved them as his parents. Later Joy moved to Middle East and returned as a rich man. Even in happiness, he didn't forget the poor leprosy patients.
+</p>
+</div>
+</div>
+<br>
+<p class="text-center">							<a class="btn btn-hot btn-md" style="color:white" href="https://www.youtube.com/watch?v=N0wX8CWeNFc" target="_blank">Watch this movie</a>
+</p>
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">Duration: 1hr 30Mins</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<span class="timeline-label">
+                        <span class="label label-info ">2009</span>
+                    </span>
+
+                    <div class="timeline-item">
+                        <div class="timeline-point timeline-point-primary">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-event timeline-event-primary">
+                            <div class="timeline-heading">
+                                <h4>Viswasam (Faith)</h4>
+								                                <p>Story, Screen play, Dialogue, Director, Hero  </p>
+
+                            </div>
+                            <div class="timeline-body">
+<div class="row">							<div class="col-md-5 col-md-offset-1">
+<img src="img/filims/viswasam.jpg" class="img-responsive img-rounded">
+</div>
+
+<div class="col-md-5">
+
+<p>
+This is the first film in the world which narrates   the life of St. Sebastian and reveals the importance of confession, the great sacrament in Christianity. It depicts the story of an innocent man, Stanley, his revengeful mind and attitude. The sinners, all those who have had their hearts torn by Stanley's words get their fair share of fate. Rev. Fr. Pious Arattukulam who devoted his whole life to convince the people about the value of love and compassion and lead them in a safe path. When such a movie- with a vision and a mission- blooms before eyes, they remember the life of Saint Sebastian. The award-winning director Joy K. Mathew dons the role of Stanley while he also handles the script and the dialogues. This film got an Italian award.</p>
+</div></div>
+<br>
+<p class="text-center">							<a class="btn btn-hot btn-md" style="color:white" href="https://www.youtube.com/watch?v=QtCdlKmkfUo" target="_blank">Watch this movie</a>
+</p>
+
+                            </div>
+                            <div class="timeline-footer">
+                                <p class="text-right">Duration: 2hr 30Mins</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					
+					<span class="timeline-label">
+                        <span class="label label-info ">2011</span>
+                    </span>
+
+                    <div class="timeline-item">
+                        <div class="timeline-point timeline-point-primary">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-event timeline-event-primary">
+                            <div class="timeline-heading">
+                                <h4>Kanakkazhchakal (Unseen Visuals)</h4>
+                                                            <p>Story, Screen play, Dialogue, Director, Hero </p>
+</div>
+                            <div class="timeline-body">
+<div class="row">							<div class="col-md-5 col-md-offset-1">
+<img src="img/filims/kaanakazhchakal.jpg" class="img-responsive img-rounded">
+</div>
+<div class="col-md-5">
+<p>This film narrates the story of Thomas Kutty who was blind, but lives like a common man. His goodness shows the purity of love. He has seen the world through his mother's words, who believes the darkness in his eyes is the gift of the Lord. Thomaskutty lead his life devoted to the Lord Almighty. Born into affluent spreads, but living like a commoner, Rani lives with a calm mind and angelic hear. Untold, yet so clear, so persistent in the world, we see the hardships of the underdogs of society- a totally breath-taking experience. 
+</p>
+<p>The theme holds on to the fact that nothing will shake the determined and believing hearts. We travel through the iron bridge between hearts, never broken or shaky as we travel from one end to the other. This film shows the stories of people who have come from palaces to shacks for searching the true love, and they realize that the real love is not an imagination but it is a living truth.  Joy essayed the main role in this film. 
+</p>
+<p><strong>Story - Screenplay - Dialogue - Direction:</strong> Joy K Mathew, <strong>Lyrics:</strong> Prakash Mannathra, <strong>Music:</strong> Augustine Kadamakkudi, <strong>Singer: </strong>Kester, Minmini, <strong>Production:</strong> World Mother Vision (Joy K Mathew).
+</p></div></div>
+                            <br>
+<p class="text-center">							<a class="btn btn-hot btn-md" style="color:white" href="https://www.youtube.com/watch?v=F9GWKBMVWtM" target="_blank">Watch this movie</a>
+</p>
+							
+							</div>
+                            <div class="timeline-footer">
+                                <p class="text-right">Duration: 2hr 30Mins</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					
+					
+					<span class="timeline-label">
+                        <span class="label label-info ">2012</span>
+                    </span>
+
+					
+					
+					<div class="timeline-item">
+                        <div class="timeline-point timeline-point-primary">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-event timeline-event-primary">
+                            <div class="timeline-heading">
+                                <h4>Varuthikkalathe Vasantham (The spring in the time of summer)</h4>
+                                                            <p>Story, Screenplay,Dialogue,Director,Hero </p>
+</div>
+                            <div class="timeline-body">
+						<div class="row">							<div class="col-md-4 col-md-offset-1">	<img src="img/filims/varuthikkalathe vasantham joy k mathew.jpg" class="img-responsive img-rounded">
+</div>
+<div class="col-md-5">
+
+<p>This film tells us the life of coastal residents in Kerala. Poverty and tidal attacks destroy the happiness of their life, but they always maintain sincerity and honesty to themselves and to others. This film reveals the reality and innocence of their mind.  They didn't get any help from government, so this film also tries to open the eyes of the government to protect the life of these people. Their life is always threatened by the advancing waves. 
+</p>
+<p>The life of coastal area people is sadly pushed to its limits because of the absence of sea walls and the presence of breakwaters. This short film shows the unity of the people, who is always struggling for basic needs of the daily life. Joy K Mathew plays the main role. Adv. A.M. Arif MLA, Augustine, Remya, Bindu Ramakrishnanwere the other characters. Story - Screenplay - Dialogue - Direction: Joy K Mathew, Cinematography: Sidharthan, Lyrics: Vayalar Gopalakrishnan, Music: Augustine Kadamakkudi, Singer: Joby Primuse, Production: World Mother Vision (Joy K Mathew).
+</p>
+</div></div>
+                            <br>
+<p class="text-center">							<a class="btn btn-hot btn-md" style="color:white" href="https://www.youtube.com/watch?v=MnUAlT7kOgY" target="_blank">Watch this movie</a>
+</p>
+							
+							</div>
+                            <div class="timeline-footer">
+                                <p class="text-right">Duration: 15Mins</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					
+					
+					
+					
+					<span class="timeline-label">
+                        <span class="label label-info ">2013</span>
+                    </span>
+
+<div class="timeline-item">
+                        <div class="timeline-point timeline-point-primary">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-event timeline-event-primary">
+                            <div class="timeline-heading">
+                                <h4> Marananantharam (Mortality)</h4>
+                                                            <p> Story, Screenplay, Dialogue, Director, Hero </p>
+</div>
+                            <div class="timeline-body">
+<div class="row">							<div class="col-md-6">
+<img src="img/filims/l9.jpg" class="img-responsive img-rounded">
+<img src="img/filims/l19.jpg" class="img-responsive img-rounded spaceontop">
+</div><div class="col-md-6">
+<p>                            This is his famous motivational film, which got many international acclaims. The importance of eye donation in a human life is the subject of this film and encourages the public to donate their organs. The presence of Mr. Joy K. Mathew and some other celebrities made the film more popular and success.  Mr. Kochouseph Chittilappally, the famous industrialist who donated one of his kidneys, handled the main roles in this short film.
+</p><p>Kochouseph Chittilappally, who has shown love for humanity by donating   one of his kidneys to a stranger, is a milestone in humanitarian work. We hear about more and more parents donating their children's organs- those who have undergone brain deaths- and people who donate their eyes on death. This is because people like Chittilappally exist like an oasis in the desert of humanity- where mostly we have chasms devoid of emotion or selflessness. People like him handles a major role in inspiring others and spreading the feelings to do the same like him.
+</p><p>Since time immemorial, perhaps from the beginning of mankind, man had the urge to gain immortality. From elixir to unicorn blood in mythologies, he has experimented to find out the secret behind immortality. But now, the path to immortality is open. We can triumph over mortality by donating organs and thus live on. Let us be ready to take the decision- that we will donate our organs. Joy K. Mathew, who got innumerable awards and recognitions for his insightful, classic films, is showing us the greatness of donating organs through his movie 'Mortality' under the banner of World Mother Vision. 
+</p><p>In the presence of the State M.L.A. Adv. A.M. Arif, Indian Film Actress Kaviyoor Ponnamma ,KochousephC hittilappally, World Table Tennis Star Maria Roni and Joy K. Mathew, this movie conquered great heights with its beautiful aims to enlighten the society. The Cinematography is done by Sidharthan, Editing by Ragesh Narayan, Music by Kavalam Narayana Panikkar and Augustine Kadamakkudi, sung by Kavalam Narayana Panikkar and former minister Mr. Jose Thettayil
+</p>
+</div></div>
+
+<br>
+<p class="text-center">							<a class="btn btn-hot btn-md" style="color:white" href="https://www.youtube.com/watch?v=LONLrDRaT84" target="_blank">Watch this movie</a>
+</p>
+							</div>
+                            <div class="timeline-footer">
+                                <p class="text-right">Duration: 3Mins</p>
+                            </div>
+                        </div>
+                    </div>
+
+<span class="timeline-label">
+                        <span class="label label-info ">2014</span>
+                    </span>
+					
+					<div class="timeline-item">
+                        <div class="timeline-point timeline-point-primary">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-event timeline-event-primary">
+                            <div class="timeline-heading">
+                                <h4>  Aathmakkalude nombaram  </h4>
+                                                            <p> Hero, Producer  </p>
+</div>
+                            <div class="timeline-body">
+
+<div class="row">							<div class="col-md-6">
+<img src="img/filims/Aathmakkalude nombaram.jpg" class="img-responsive img-rounded">
+</div><div class="col-md-6">
+
+<p>                            This short film tells the story of two souls. A drunkard and his mother. Drunkard who leads wayward life but he has devoted his life for his mother. One day his mother met with a motor accident which involves her son who was the driver under the influence of alcohol at the time of accident. Both of them are killed in the accident. 
+</p><p>The restless soul of the drunkard meets the good soul of the mother in their afterlife. They came to know about each other. The drunkard repents on his sins. Many people attended the after-death rituals of the mother, but no one comes for the drunkard's. The mother brings the drunkard to the place where the rituals were taking place and she finds the son in great grief for the loss of his mother. The drunkard understands what it is to lose someone and cannot hold back his emotions. He cries his heart out and is consoled only by the words of the mother's good spirit.
+</p>
+</div></div>							<br>
+<p class="text-center">							<a class="btn btn-hot btn-md" style="color:white" href="https://www.youtube.com/watch?v=pY0mXUsBFEI" target="_blank">Watch this movie</a>
+</p>
+							</div>
+                            <div class="timeline-footer">
+                                <p class="text-right">Duration: 30Mins</p>
+                            </div>
+                        </div>
+                    </div>
+					
+<span class="timeline-label">
+                        <span class="label label-info ">2015</span>
+                    </span>
+
+
+<div class="timeline-item">
+                        <div class="timeline-point timeline-point-primary">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-event timeline-event-primary">
+                            <div class="timeline-heading">
+                                <h4>Punarjani Thedunna Parvathy Puthanar (Parvathi Puthanar longing for a rebirth)  </h4>
+                                                            <p> Script, Director, Producer </p>
+</div>
+                            <div class="timeline-body">
+
+
+<p>                            	This is a well noted documentary. Parvathy Puthanar is a river in the capital city of Kerala called Thiruvananthapuram. People living on the banks of this river were not much aware of the importance of the healthy existence of this river. They always dumped their domestic waste into the river. This created many environmental issues in the surrounding area. Now Parvathi Puthanar is one of the main environmental challenges in Thiruvananthapuram. 
+</p><p>The documentary narrates the environmental problems in the society. It also convinces the society about the importance of protecting the river.
+</p>
+				<br>
+<p class="text-center">							<a class="btn btn-hot btn-md" style="color:white" href="https://www.youtube.com/watch?v=YHIpe-MyNt4" target="_blank">Watch this movie</a>
+</p>			
+							</div>
+                            <div class="timeline-footer">
+                                <p class="text-right">Duration: 45Mins</p>
+                            </div>
+                        </div>
+                    </div>
+
+<span class="timeline-label">
+                        <span class="label label-info ">2017</span>
+                    </span>
+					
+					<div class="timeline-item">
+                        <div class="timeline-point timeline-point-primary">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-event timeline-event-primary">
+                            <div class="timeline-heading">
+                                <h4>  The angel of Tenderness - Documentary on Mother Teresa Script  </h4>
+                                                            <p>   Director, Producer</p>
+</div>
+                            <div class="timeline-body">
+
+<div class="row"><div class="col-md-6">															<img src="mother teresa joy k mathew.jpg" class="img-responsive img-rounded">
+</div>	<div class="col-md-6">		<img src="saint mother teresa  joy k mathew.jpg" class="img-responsive img-rounded">
+</div>
+</div>
+
+                            
+<p>							Joy K Mathew has had a unique opportunity to be with Mother Teresa, the angel of the poor, two months prior her demise. He had been in her place for 30 days. Visited all the service institutions run by Mother Teresa and the experiences imbibed from there are ineffable and innumerable. Based on them He made a documentary on Mother Teresa titled “ The Angel of Tenderness “
+</p><br>
+<span class="h3 spaceontop">About Mother Teresa<br>
+
+</span><br>
+<p>Saint Mother Teresa (26 August 1910 to 5 September 1997) also known as Blessed Teresa of Calcutta, was a Roman Catholic religious sister and missionary. She was born in Skopje (modern Republic of Macedonia). After having lived in Macedonia for some eighteen years, she moved to Ireland and then to India, where she lived her life till the last breath.
+Agnes Gonxha Bojaxhiu, now known as Mother Teresa, was the third and final child born to her Albanian Catholic parents, Nikollë and Dranafile Bojaxhiu, in the city of Skopje (a predominantly Muslim city in the Balkans). Her father was an entrepreneur and who worked as a construction contractor and a trader of medicines and other goods. When Mother Teresa was about eight years old, her father died unexpectedly. Agnes attended a convent and primary school and a secondary school.
+When Mother Teresa was 12 years old, she began to feel called to serve God as a nun. In 1928, 18-year-old Mother Teresa travelled to Ireland and then on to India and never saw her mother or sister again. It took more than two years to become a Loreto nun. After spending six weeks in Ireland Mother Teresa then travelled to India in 1929. After two years as a novice, Mother Teresa took her first vows as a Loreto nun on May 24, 1931.
+As a new Loreto nun, Mother Teresa (known then only as Sister Teresa, a name she chose after St. Teresa of Lisieux) settled in to the Loreto Entally convent in Kolkata (previously called Calcutta) and began teaching history and geography at the convent schools. In 1935, 25-year-old Mother Teresa was given a special exemption to teach at a school outside of the convent, St. Teresa's. After two years at St. Teresa's, Mother Teresa took her final vows on 24 May 1937 and officially became "Mother Teresa."
+</p>
+<p>Almost immediately after taking her final vows, Mother Teresa became the principal of St. Mary's, one of the convent schools and was once again restricted to live within the convent's walls.
+</p>
+<p>"A call within a call"
+September 10, 1946, a day now annually celebrated as "Inspiration Day," Mother Teresa received what she described as a "call within a call." She had been traveling on a train to Darjeeling when she received an "inspiration," a message that told her to leave the convent and help the poor by living among them.
+Mother Teresa was granted permission to leave the convent for one year to help the poorest of the poor.
+</p><p>In March 1949, Mother Teresa was joined by her first helper, a former pupil from Loreto. Soon she had ten former pupils helping her.
+</p><p>At the end of Mother Teresa's pro visionary year, she petitioned to form her own order of nuns, the Missionaries of Charity. Her request was granted by Pope Pius XII; the Missionaries of Charity was established on 7 October 1950.
+</p>
+							
+							
+							
+							</div>
+                            <div class="timeline-footer">
+                                <p class="text-right">Duration: 45Mins</p>
+                            </div>
+                        </div>
+                    </div>
+					
+
+                    <span class="timeline-label">
+                        <button class="btn btn-danger"><i class="fa fa-ambulance"></i></button>
+                    </span>
+                </div>
+ 				  
+				  
+				  </div>
+               </div>
+           </article>           
+        </section>
+		
+		
+		
+        <section id="gallery">
+           <article>
+               <div >
+                   <div class="container-fluid">
+                    <h1>Gallery</h1>
+
+<div class="gal">
+	<?
+	$i = 0;
+	while($i<28){
+	
+	echo '<img src="img/home/1 ('.$i.').jpg">';
+	$i++;
+	}
+?>
+	
+	</div>
+
+                   </div>
+               </div>
+           </article>           
+        </section>
+        <section id="news">
+           <article>
+
+<div class="container">
+      <div class="row">
+<h1>In the News</h1>
+<div class="spaceontop2x"></div>
+
+<div class="col-md-4 ">
+          <div class="thumbnail smehg"><div class="caption">
+                <h4>
+Biloela filmmaker premieres Mother Teresa documentary</h4>
+                <p><img src="https://media.apnarm.net.au/site/logo/cqnews_1.png"> </p> <a href="https://www.cqnews.com.au/news/biloela-filmmaker-premieres-mother-teresa-document/3121249/" class="btn btn-info btn-xs" role="button">Read More</a> 
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-md-4 ">
+          <div class="thumbnail smehg" ><div class="caption">
+                <h4>
+Media One</h4>
+                <p><img src="http://www.mediaonetv.in/static/assets/images/logo.png" class="img-responsive"> </p> <a href="https://www.youtube.com/watch?v=hDxP2oF0ENg" class="btn btn-info btn-xs" role="button">Read More</a> 
+            </div>
+          </div>
+        </div>
+
+<div class="col-md-4 ">
+          <div class="thumbnail smehg" ><div class="caption">
+                <h4>
+കണിയാംപറമ്പില്‍ മേരി മാത്യു മെമ്മോറിയല്‍ അവാര്‍ഡ് വിതരണവും ലൈഫ് കെയര്‍ പദ്ധതി ഉദ്ഘാടനവും</h4>
+                <p><img src="http://www.deshabhimani.com/images/deshabhimani-logo.png" class="img-responsive"> </p> <a href="http://www.deshabhimani.com/news/pravasi/news-australiapravasi-04-07-2017/655043" class="btn btn-info btn-xs" role="button">Read More</a> 
+            </div>
+          </div>
+        </div>
+
+<div class="col-md-4 ">
+          <div class="thumbnail smehg" ><div class="caption">
+                <h4>
+കണിയാംപറമ്പില്‍ മേരി മാത്യു മെമ്മോറിയല്‍ അവാര്‍ഡ് വിതരണവും ലൈഫ് കെയര്‍ പദ്ധതി ഉദ്ഘാടനവും</h4>
+                <p><img src="https://malayalam.oneindia.com/img/malayalam-logo.gif" class="img-responsive"> </p> <a href="https://malayalam.oneindia.com/news/international/commemoration-kaniyamparabmil-mary-mathew-award-function-held-june-30th-175598.html" class="btn btn-info btn-xs" role="button">Read More</a> 
+            </div>
+          </div>
+        </div>
+
+<div class="col-md-4 ">
+          <div class="thumbnail smehg" ><div class="caption">
+                <h4>
+ കണിയാംപറമ്പില്‍ മേരി മാത്യു മെമ്മോറിയല്‍ അവാര്‍ഡ് വിതരണം ചെയ്തു</h4>
+                <p><img src="http://img-mm.manoramaonline.com/content/dam/mm/ml/common/logo-bottom.png" class="img-responsive"> </p> <a href="http://oceania.manoramaonline.com/oceania/2017/07/04/mary-mathew-memorial-award-was-presented-at-kaniyamparambil.html" class="btn btn-info btn-xs" role="button">Read More</a> 
+            </div>
+          </div>
+        </div>
+
+
+
+      <div class="col-md-4 ">
+          <div class="thumbnail smehg"><div class="caption">
+                <h4>
+കണിയാംപറമ്പില്‍ മേരി മാത്യു മെമ്മോറിയല്‍ അവാര്‍ഡ് വിതരണവും ലൈഫ് കെയര്‍ പദ്ധതി ഉദ്ഘാടനവും
+</h4>
+                <p><img src="http://www.mathrubhumi.com/polopoly_fs/7.6941110.1502762476!/image/image.png_gen/derivatives/default/image.png"> </p> <a href="http://www.mathrubhumi.com/nri/oceania/news/kaniyamparambil-marry-matthew-memorial-award-brisbane-1.2061502" class="btn btn-info btn-xs" role="button">Read More</a> 
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-md-4 ">
+          <div class="thumbnail smehg"><div class="caption">
+                <h4>
+കണിയാംപറമ്പില്‍ മേരി മാത്യു മെമ്മോറിയല്‍ അവാര്‍ഡ് വിതരണവും ലൈഫ് കെയര്‍ പദ്ധതി ഉദ്ഘാടനവും
+</h4>
+                <p><img src="http://www.mangalam.com/assets/c0d86127/img/mangalam-logo.png" class="img-responsive"> </p> <a href="http://www.mangalam.com/news/detail/124377-australia.html" class="btn btn-info btn-xs" role="button">Read More</a> 
+            </div>
+          </div>
+        </div>
+       
+	   
+	   
+	   <div class="col-md-4 ">
+          <div class="thumbnail smehg"><div class="caption">
+                <h4>
+മദര്‍ തെരേസയെക്കുറിച്ച് ആസ്‌ട്രേലിയന്‍ മലയാളിയുടെ ഡോക്യുമെന്ററി രാജ്യാന്തര ശ്രദ്ധനേടുന്നു</h4>
+                <p><img src="http://keralaonlinenews.com/images/logo.jpg"> </p> <a href="http://keralaonlinenews.com/Movies/the-angle-of-tenderness-documentary1-12801.html" class="btn btn-info btn-xs" role="button">Read More</a> 
+            </div>
+          </div>
+        </div>
+        
+
+
+	   <div class="col-md-4 ">
+          <div class="thumbnail smehg"><div class="caption">
+                <h4>
+'ദ എയ്ഞ്ചല്‍ ഓഫ് ടെന്‍ഡര്‍നെസ്സ്' ഡോക്യുമെന്ററി പ്രകാശനവും മദര്‍ തെരേസ കാരുണ്യസംഗമവും
+</h4>
+                <p><img src="http://www.deshabhimani.com/images/deshabhimani-logo.png" class="img-responsive"> </p> <a href="http://www.deshabhimani.com/news/pravasi/angel-of-tenderness/607829" class="btn btn-info btn-xs" role="button">Read More</a> 
+            </div>
+          </div>
+        </div>
+
+
+<div class="col-md-4 ">
+          <div class="thumbnail smehg" ><div class="caption">
+                <h4>
+
+ഡോക്യുമെന്ററി പ്രകാശനവും മദര്‍ തെരേസ കാരുണ്യ സംഗമവും
+
+</h4>
+                <p><img src="http://www.mathrubhumi.com/polopoly_fs/7.6941110.1502762476!/image/image.png_gen/derivatives/default/image.png" class="img-responsive"> </p> <a href="http://www.mathrubhumi.com/nri/oceania/news/documentary-malayalam-news-1.1551537" class="btn btn-info btn-xs" role="button">Read More</a> 
+            </div>
+          </div>
+        </div>
+
+
+
+
+<div class="col-md-4 ">
+          <div class="thumbnail smehg" ><div class="caption">
+                <h4>
+
+ദ എയ്ഞ്ചല്‍ ഓഫ് ടെന്‍ഡര്‍നെസ്സ് ഡോക്യുമെന്ററി പ്രകാശനവും മദര്‍ തെരേസ കാരുണ്യ സംഗമവും
+</h4>
+                <p><img src="http://www.mangalam.com/assets/c0d86127/img/mangalam-logo.png" class="img-responsive"> </p> <a href="http://www.mangalam.com/news/detail/57758-australia.html" class="btn btn-info btn-xs" role="button">Read More</a> 
+            </div>
+          </div>
+        </div>
+
+
+
+
+		
+<div class="col-md-4 ">
+          <div class="thumbnail smehg" ><div class="caption">
+                <h4>
+
+ബ്രിസ്ബേനിൽ ഡോക്കുമെന്ററി പ്രകാശനവും മദർ തെരേസ കാരുണ്യ സംഗമവും
+</h4>
+                <p><img src="http://www.deepika.com/nri/images/deepika_main_logo.jpg" class="img-responsive"> </p> <a href="http://www.deepika.com/nri/Pravasi_News.aspx?newscode=83249" class="btn btn-info btn-xs" role="button">Read More</a> 
+            </div>
+          </div>
+        </div>
+
+		<style>
+		.smehg{
+		height:17em !important;}
+		
+		</style>
+       
+        
+  </div><!--/row-->
+</div><!--/container -->
+           </article>           
+        </section>
+		<section id="contact">
+           <article>
+               <div  class="container">
+                   <div class="col-md-12">
+                    <h1>Contact us</h1>
+                       <p class="spaceontop2x">
+                        Wire to us on <a href="mailto:dirjoykmathew@gmail.com">dirjoykmathew@gmail.com</a>                                
+                       </p>
+                   </div>
+               </div>
+           </article>           
+        </section>        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.awesome-tooltip').tooltip({
+        placement: 'left'
+    });   
+
+    $(window).bind('scroll',function(e){
+    });
+    
+
+    /* get clicks working */
+    $('.nv').click(function(){
+      
+        var id = $(this).find('a').attr("href"),
+          posi,
+          ele,
+          padding = 0;
+      
+        ele = $(id);
+        posi = ($(ele).offset()||0).top - padding - 30;
+      
+        $('html, body').animate({scrollTop:posi}, 'slow');
+      
+        return false;
+    });
+
+/* end dot nav */
+});
+</script>
+  </body>
+</html>
